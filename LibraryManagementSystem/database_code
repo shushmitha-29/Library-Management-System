@@ -1,0 +1,46 @@
+1. Create a database
+-- Creating database
+create database library;
+
+
+2. Select the database
+-- Selecting the database
+use library;
+
+
+3. Create a book table
+-- Creating book table
+create table book (
+  id int primary key,
+  book_name varchar(25),
+  category varchar(15),
+  author varchar(25),
+  publisher varchar(25),
+);
+
+
+4. Create an issue table
+-- Creating issue table
+create table issue (
+  member_id int primary key,
+  member_name varchar(25),
+  book_name varchar(25),
+  date_issue date,
+  date_return date
+);
+
+
+
+5. Create an admin table
+-- Create admin table
+create table admin (
+cust_id varchar(25),
+password varchar(25)
+);
+
+
+6. Insert some values in the admin table
+-- Inserting values
+insert into admin values
+("admin1","1234"),
+("admin2","9876");
